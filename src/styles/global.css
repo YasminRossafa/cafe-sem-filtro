@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Zera margin e padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1a18; /* se quiser já deixar a cor do fundo */
+  }
