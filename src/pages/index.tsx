@@ -30,6 +30,7 @@ const Inicio = (): JSX.Element => {
 
       <div className="bg-white flex flex-row justify-center w-full">
         <div className="bg-white w-[1280px] relative">
+          
           <div className="absolute w-full min-h-screen top-0 left-0">
             {/* Fundo escuro */}
             <div className="absolute w-full h-[491px] top-[550px] left-0 bg-[#1e1a18]" />
@@ -45,7 +46,7 @@ const Inicio = (): JSX.Element => {
             <img
               className="absolute w-[282px] h-[158px] top-[290px] left-[263px] object-cover"
               alt="Logo café sem filtro"
-              src="/images/logo.webp"
+              src="/images/logo.png"
             />
 
             {/* Topo */}
@@ -74,60 +75,60 @@ const Inicio = (): JSX.Element => {
             </div>
 
             {/* Texto Principal */}
-            <p className="absolute w-[435px] top-[198px] left-[820px] font-bold text-[#f2c38b] text-5xl text-center">
+            <p className="absolute w-[435px] top-[150px] left-[825px] font-bold text-[#f2c38b] text-[45px] text-center">
               Métodos artesanais, grãos selecionados <br></br>
               e uma experiência incrível!
             </p>
           </div>
 
-            {/* Seção de Valores */}
-            <div id="nossos-valores" className="absolute w-[1184px] h-[361px] top-[580px] left-[50%] translate-x-[-50%]">
-              {/* Título */}
-              <div className="absolute w-[335px] top-0 left-[426px] font-zen text-[#f2c38b] text-[45px] leading-[70px] whitespace-nowrap text-center">
-                Nossos Valores
-              </div>
-
-              {/* Cards de Valores */}
-              <div className="absolute w-[313px] h-[145px] top-[100px] left-[15px]">
-                <span className="material-symbols-outlined absolute w-24 h-[95px] top-0 left-[125px] text-[#f2c38b] text-6xl">
-                  skillet
-                </span>
-                <div className="absolute w-[313px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
-                  Métodos de Preparação Exclusivos
-                </div>
-              </div>
-
-              <div className="absolute w-[313px] h-[145px] top-[100px] left-[439px]">
-                <span className="material-symbols-outlined absolute w-[74px] h-[95px] top-0 left-[114px] text-[#f2c38b] text-6xl">
-                  grain
-                </span>
-                <div className="absolute w-[313px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
-                  Grãos Selecionados e Sustentáveis
-                </div>
-              </div>
-
-              <div className="absolute w-[220px] h-[145px] top-[100px] left-[889px]">
-                <span className="material-symbols-outlined absolute w-[92px] h-[95px] top-0 left-[65px] text-[#f2c38b] text-6xl">
-                  connect_without_contact
-                </span>
-                <div className="absolute w-[220px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
-                  Experiências Interativas
-                </div>
-              </div>
-
-              {/* Textos pequenos */}
-              <p className="absolute w-[340px] top-[238px] left-0 font-inria text-[#f2c38b] text-xl text-center leading-[25px]">
-                Oferecer métodos de preparo como prensa francesa, siphon e cold brew.
-              </p>
-
-              <p className="absolute w-[340px] top-[238px] left-[424px] font-inria text-[#f2c38b] text-xl text-center leading-[25px]">
-                Trabalhar com fornecedores locais que utilizam práticas de cultivo sustentável, garantindo grãos de alta qualidade e de comércio justo.
-              </p>
-
-              <p className="absolute w-[340px] top-[238px] left-[830px] font-inria text-[#f2c38b] text-xl text-center leading-[25px]">
-                Promover workshops de barista e degustações de café, onde os clientes podem aprender sobre a arte do café e experimentar a preparação de suas próprias bebidas.
-              </p>
+          {/* Seção de Valores */}
+          <div id="nossos-valores" className="absolute w-[1184px] h-[361px] top-[580px] left-[50%] translate-x-[-50%]">
+            {/* Título */}
+            <div className="absolute w-[335px] top-0 left-[426px] font-zen text-[#f2c38b] text-[45px] leading-[70px] whitespace-nowrap text-center">
+              Nossos Valores
             </div>
+
+            {/* Cards de Valores */}
+            <div className="absolute w-[313px] h-[145px] top-[100px] left-[15px]">
+              <span className="material-symbols-outlined absolute w-24 h-[95px] top-0 left-[125px] text-[#f2c38b] text-6xl">
+                skillet
+              </span>
+              <div className="absolute w-[313px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
+                Métodos de Preparação Exclusivos
+              </div>
+            </div>
+
+            <div className="absolute w-[313px] h-[145px] top-[100px] left-[439px]">
+              <span className="material-symbols-outlined absolute w-[74px] h-[95px] top-0 left-[114px] text-[#f2c38b] text-6xl">
+                grain
+              </span>
+              <div className="absolute w-[313px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
+                Grãos Selecionados e Sustentáveis
+              </div>
+            </div>
+
+            <div className="absolute w-[220px] h-[145px] top-[100px] left-[889px]">
+              <span className="material-symbols-outlined absolute w-[92px] h-[95px] top-0 left-[65px] text-[#f2c38b] text-6xl">
+                connect_without_contact
+              </span>
+              <div className="absolute w-[220px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
+                Experiências Interativas
+              </div>
+            </div>
+
+            {/* Textos pequenos */}
+            <p className="absolute w-[340px] top-[238px] left-0 font-inria text-[#f2c38b] text-xl text-center leading-[25px]">
+              Oferecer métodos de preparo como prensa francesa, siphon e cold brew.
+            </p>
+
+            <p className="absolute w-[340px] top-[238px] left-[424px] font-inria text-[#f2c38b] text-xl text-center leading-[25px]">
+              Trabalhar com fornecedores locais que utilizam práticas de cultivo sustentável, garantindo grãos de alta qualidade e de comércio justo.
+            </p>
+
+            <p className="absolute w-[340px] top-[238px] left-[830px] font-inria text-[#f2c38b] text-xl text-center leading-[25px]">
+              Promover workshops de barista e degustações de café, onde os clientes podem aprender sobre a arte do café e experimentar a preparação de suas próprias bebidas.
+            </p>
+          </div>
 
           {/* Rodapé */}
           <div id="rodape" className="absolute w-full h-[162px] top-[1000px] left-0 bg-[#3f322b]">
