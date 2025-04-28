@@ -15,6 +15,17 @@ const Inicio = (): JSX.Element => {
           href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inria+Sans&family=Zen+Antique&display=swap"
           rel="stylesheet"
         />
+        {/* Meta tag viewport para responsividade */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* CSS para responsividade com media queries */}
+        <style>{`
+          @media (max-width: 1280px) {
+            body {
+              min-width: 1280px;
+              overflow-x: auto;
+            }
+          }
+        `}</style>
       </Helmet>
 
       <div className="bg-white flex flex-row justify-center w-full">
@@ -22,6 +33,52 @@ const Inicio = (): JSX.Element => {
           <div className="absolute w-full min-h-screen top-0 left-0">
             {/* Fundo escuro */}
             <div className="absolute w-full h-[491px] top-[550px] left-0 bg-[#1e1a18]" />
+
+            {/* Fundo início */}
+            <img
+              className="absolute w-full h-[550px] top-0 left-0 object-cover"
+              alt="Fundo início"
+              src="/images/fundo-inicio.png"
+            />
+
+            {/* Logo */}
+            <img
+              className="absolute w-[282px] h-[158px] top-[290px] left-[263px] object-cover"
+              alt="Logo café sem filtro"
+              src="/images/logo.webp"
+            />
+
+            {/* Topo */}
+            <div className="absolute w-[1054px] h-[52px] top-[54px] left-[50%] translate-x-[-50%] flex justify-between items-center">
+              <div className="flex gap-4">
+                <div>
+                  <a href="#nossos-valores" className="no-underline font-inria text-[#f2c38b] text-[40px]">SOBRE | </a>
+                </div>
+                <Link to="/menu" className="font-inria text-[#f2c38b] no-underline text-[40px]">
+                  | MENU | 
+                </Link>
+                <div>
+                  <a href="#rodape" className="no-underline font-inria text-[#f2c38b] text-[40px]">| CONTATO</a>
+                </div>
+              </div>
+
+              <a
+                style={{ color: "black" }}
+                className="relative w-[254px] h-[52px] bg-[#d4903e] flex items-center justify-center font-inria no-underline text-[32px]"
+                href="https://wa.me/5511991407988?text=Quero%20saber%20mais%20sobre%20a%20cafeteria%2C%20vi%20algumas%20informa%C3%A7%C3%B5es%20no%20site!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+            </div>
+
+            {/* Texto Principal */}
+            <p className="absolute w-[435px] top-[198px] left-[820px] font-bold text-[#f2c38b] text-5xl text-center">
+              Métodos artesanais, grãos selecionados <br></br>
+              e uma experiência incrível!
+            </p>
+          </div>
 
             {/* Seção de Valores */}
             <div id="nossos-valores" className="absolute w-[1184px] h-[361px] top-[580px] left-[50%] translate-x-[-50%]">
@@ -72,52 +129,6 @@ const Inicio = (): JSX.Element => {
               </p>
             </div>
 
-            {/* Fundo início */}
-            <img
-              className="absolute w-full h-[550px] top-0 left-0 object-cover"
-              alt="Fundo início"
-              src="/images/fundo-inicio.png"
-            />
-
-            {/* Logo */}
-            <img
-              className="absolute w-[282px] h-[158px] top-[290px] left-[238px] object-cover"
-              alt="Logo café sem filtro"
-              src="/images/logo.webp"
-            />
-
-            {/* Topo */}
-            <div className="absolute w-[1054px] h-[52px] top-[54px] left-[50%] translate-x-[-50%] flex justify-between items-center">
-              <div className="flex gap-4">
-                <div>
-                  <a href="#nossos-valores" className="no-underline font-inria text-[#f2c38b] text-[40px]">SOBRE | </a>
-                </div>
-                <Link to="/menu" className="font-inria text-[#f2c38b] no-underline text-[40px]">
-                  | MENU | 
-                </Link>
-                <div>
-                  <a href="#rodape" className="no-underline font-inria text-[#f2c38b] text-[40px]">| CONTATO</a>
-                </div>
-              </div>
-
-              <a
-                style={{ color: "black" }}
-                className="relative w-[254px] h-[52px] bg-[#d4903e] flex items-center justify-center font-inria no-underline text-[32px]"
-                href="https://wa.me/5511991407988?text=Quero%20saber%20mais%20sobre%20a%20cafeteria%2C%20vi%20algumas%20informa%C3%A7%C3%B5es%20no%20site!"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-            </div>
-
-            {/* Texto Principal */}
-            <p className="absolute w-[435px] top-[198px] left-[795px] font-bold text-[#f2c38b] text-5xl text-center">
-              Métodos artesanais, grãos selecionados <br></br>
-              e uma experiência incrível!
-            </p>
-          </div>
-
           {/* Rodapé */}
           <div id="rodape" className="absolute w-full h-[162px] top-[1000px] left-0 bg-[#3f322b]">
             <div className="relative w-[1089px] h-[72px] top-[37px] left-[50%] translate-x-[-50%] flex justify-between items-center">
@@ -134,7 +145,7 @@ const Inicio = (): JSX.Element => {
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#f2c38b] text-4xl">schedule</span>
                 <p className="font-inria text-[#f2c38b] text-3xl text-right">
-                  Seg à Sab<br />06h às 19h
+                  Seg à Sab - 06h às 19h
                 </p>
               </div>
             </div>
