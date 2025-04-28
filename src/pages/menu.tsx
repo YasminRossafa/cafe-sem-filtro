@@ -5,12 +5,27 @@ import { Helmet } from "react-helmet";
 const Menu = (): JSX.Element => {
   return (
     <div className="bg-white flex flex-row justify-center w-full">
-      {/* Carrega Material Symbols */}
+      {/* Carrega Material Symbols e adiciona meta tag viewport */}
       <Helmet>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inria+Sans&family=Zen+Antique&display=swap"
+          rel="stylesheet"
+        />
+        {/* Meta tag viewport para responsividade */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* CSS para responsividade com media queries */}
+        <style>{`
+          @media (max-width: 1280px) {
+            body {
+              min-width: 1280px;
+              overflow-x: auto;
+            }
+          }
+        `}</style>
       </Helmet>
 
       <div className="bg-white w-[1280px] h-[1483px]">
