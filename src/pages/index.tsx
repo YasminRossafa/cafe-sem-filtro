@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 
 const Inicio = (): JSX.Element => {
   return (
@@ -23,36 +24,36 @@ const Inicio = (): JSX.Element => {
             <div className="absolute w-full h-[491px] top-[550px] left-0 bg-[#1e1a18]" />
 
             {/* Seção de Valores */}
-            <div className="absolute w-[1184px] h-[361px] top-[580px] left-[50%] translate-x-[-50%]">
+            <div id="nossos-valores" className="absolute w-[1184px] h-[361px] top-[580px] left-[50%] translate-x-[-50%]">
               {/* Título */}
               <div className="absolute w-[335px] top-0 left-[426px] font-zen text-[#f2c38b] text-[45px] leading-[70px] whitespace-nowrap text-center">
                 Nossos Valores
               </div>
 
               {/* Cards de Valores */}
-              <div className="absolute w-[313px] h-[145px] top-[90px] left-[15px]">
+              <div className="absolute w-[313px] h-[145px] top-[100px] left-[15px]">
                 <span className="material-symbols-outlined absolute w-24 h-[95px] top-0 left-[125px] text-[#f2c38b] text-6xl">
                   skillet
                 </span>
-                <div className="absolute w-[313px] top-[92px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
+                <div className="absolute w-[313px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
                   Métodos de Preparação Exclusivos
                 </div>
               </div>
 
-              <div className="absolute w-[313px] h-[145px] top-[90px] left-[439px]">
+              <div className="absolute w-[313px] h-[145px] top-[100px] left-[439px]">
                 <span className="material-symbols-outlined absolute w-[74px] h-[95px] top-0 left-[114px] text-[#f2c38b] text-6xl">
                   grain
                 </span>
-                <div className="absolute w-[313px] top-[92px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
+                <div className="absolute w-[313px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
                   Grãos Selecionados e Sustentáveis
                 </div>
               </div>
 
-              <div className="absolute w-[220px] h-[145px] top-[90px] left-[889px]">
+              <div className="absolute w-[220px] h-[145px] top-[100px] left-[889px]">
                 <span className="material-symbols-outlined absolute w-[92px] h-[95px] top-0 left-[65px] text-[#f2c38b] text-6xl">
                   connect_without_contact
                 </span>
-                <div className="absolute w-[220px] top-[92px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
+                <div className="absolute w-[220px] top-[80px] left-0 font-bree text-[#f2c38b] text-xl leading-[70px] text-center">
                   Experiências Interativas
                 </div>
               </div>
@@ -80,7 +81,7 @@ const Inicio = (): JSX.Element => {
 
             {/* Logo */}
             <img
-              className="absolute w-[282px] h-[158px] top-[290px] left-[230px] object-cover"
+              className="absolute w-[282px] h-[158px] top-[290px] left-[238px] object-cover"
               alt="Logo café sem filtro"
               src="/images/logo.webp"
             />
@@ -88,9 +89,15 @@ const Inicio = (): JSX.Element => {
             {/* Topo */}
             <div className="absolute w-[1054px] h-[52px] top-[54px] left-[50%] translate-x-[-50%] flex justify-between items-center">
               <div className="flex gap-4">
-                <div className="font-inria text-[#f2c38b] text-[40px]">SOBRE |</div>
-                <div className="font-inria text-[#f2c38b] text-[40px]">MENU |</div>
-                <div className="font-inria text-[#f2c38b] text-[40px]">CONTATO</div>
+                <div>
+                  <a href="#nossos-valores" className="no-underline font-inria text-[#f2c38b] text-[40px]">SOBRE | </a>
+                </div>
+                <Link to="/menu" className="font-inria text-[#f2c38b] no-underline text-[40px]">
+                  | MENU | 
+                </Link>
+                <div>
+                  <a href="#rodape" className="no-underline font-inria text-[#f2c38b] text-[40px]">| CONTATO</a>
+                </div>
               </div>
 
               <a
@@ -105,14 +112,14 @@ const Inicio = (): JSX.Element => {
             </div>
 
             {/* Texto Principal */}
-            <p className="absolute w-[435px] top-[198px] left-[785px] font-bold text-[#f2c38b] text-5xl text-center">
+            <p className="absolute w-[435px] top-[198px] left-[795px] font-bold text-[#f2c38b] text-5xl text-center">
               Métodos artesanais, grãos selecionados <br></br>
               e uma experiência incrível!
             </p>
           </div>
 
           {/* Rodapé */}
-          <div className="absolute w-full h-[162px] top-[1000px] left-0 bg-[#3f322b]">
+          <div id="rodape" className="absolute w-full h-[162px] top-[1000px] left-0 bg-[#3f322b]">
             <div className="relative w-[1089px] h-[72px] top-[37px] left-[50%] translate-x-[-50%] flex justify-between items-center">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#f2c38b] text-4xl">call</span>
