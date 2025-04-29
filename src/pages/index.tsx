@@ -19,7 +19,6 @@ const Inicio = (): JSX.Element => {
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* responsividade com media queries */}
         <style>{`
           /* Mantendo a imagem de fundo com suas dimensões originais em todos os dispositivos */
           .fundo-inicio {
@@ -284,21 +283,19 @@ const Inicio = (): JSX.Element => {
         <div className="bg-white w-full max-w-[1280px] relative">
 
           <div className="absolute w-full min-h-screen top-0 left-0">
-            {/* Fundo início */}
+
             <img
               className="fundo-inicio object-cover"
               alt="Fundo início"
               src="/images/fundo-inicio.png"
             />
 
-            {/* Logo */}
             <img
               className="logo absolute w-[282px] h-[158px] top-[290px] left-[263px] object-cover"
               alt="Logo café sem filtro"
               src="/images/logo.png"
             />
 
-            {/* Topo */}
             <div className="absolute w-full max-w-[1054px] h-[52px] top-[54px] left-[50%] translate-x-[-50%] flex justify-between items-center z-10 px-4">
               <div className="desktop-nav flex gap-4">
                 <a href="#nossos-valores" className="no-underline font-inria text-[#f2c38b] text-[40px]">SOBRE | </a>
@@ -306,7 +303,6 @@ const Inicio = (): JSX.Element => {
                 <a href="#rodape" className="no-underline font-inria text-[#f2c38b] text-[40px]">| CONTATO</a>
               </div>
 
-              {/* Menu hambúrguer mobile */}
               <button
                 className="hamburguer-button bg-transparent border-none p-0 md:hidden z-50"
                 onClick={() => setMenuOpen(!menuOpen)}
@@ -314,7 +310,6 @@ const Inicio = (): JSX.Element => {
                 <span className="material-symbols-outlined text-[#f2c38b] text-5xl">menu</span>
               </button>
 
-              {/* Botão WhatsApp */}
               <a
                 style={{ color: "black" }}
                 className="relative whatsapp-button w-[254px] h-[52px] bg-[#d4903e] flex items-center justify-center font-inria no-underline text-[32px]"
@@ -326,7 +321,6 @@ const Inicio = (): JSX.Element => {
               </a>
             </div>
 
-            {/* Menu Mobile Dropdown */}
             {menuOpen && (
               <div className="fixed top-0 left-0 h-full w-[220px] bg-[#1e1a18] z-50 flex flex-col p-6 gap-6 transition-all">
                 <button
@@ -347,19 +341,15 @@ const Inicio = (): JSX.Element => {
               </div>
             )}
 
-            {/* Texto Principal */}
             <p className="texto-principal absolute w-[435px] top-[150px] left-[825px] font-bold text-[#f2c38b] text-[45px] text-center">
               Métodos artesanais, grãos selecionados <br></br>
               e uma experiência incrível!
             </p>
           </div>
-
-          {/* Seção de Valores - REESTRUTURADA */}
           <div id="nossos-valores">
             <h2 className="valores-titulo">Nossos Valores</h2>
             
             <div className="valores-container">
-              {/* Card 1 */}
               <div className="valor-card">
                 <span 
                   className="material-symbols-outlined valor-icone"
@@ -373,7 +363,6 @@ const Inicio = (): JSX.Element => {
                 </p>
               </div>
               
-              {/* Card 2 */}
               <div className="valor-card">
                 <span 
                   className="material-symbols-outlined valor-icone"
@@ -387,7 +376,6 @@ const Inicio = (): JSX.Element => {
                 </p>
               </div>
               
-              {/* Card 3 */}
               <div className="valor-card">
                 <span 
                   className="material-symbols-outlined valor-icone"
