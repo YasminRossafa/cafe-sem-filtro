@@ -295,7 +295,7 @@ const Inicio = (): JSX.Element => {
             <img
               className="logo absolute w-[282px] h-[158px] top-[290px] left-[263px] object-cover"
               alt="Logo café sem filtro"
-              src="/images/logo.webp"
+              src="/images/logo.png"
             />
 
             {/* Topo */}
